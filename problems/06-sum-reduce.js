@@ -13,9 +13,15 @@ console.log(sumWithReduce([])); // 0
 */
 
 let sumWithReduce = function(nums) {
-  // Your code here 
-};
+  const array1 = nums;// set variable for array
 
+
+  const initialValue = 0; // have a placement holder for  the sum
+  const sumWithInitial = array1.reduce((accumulator, currentValue) => accumulator + currentValue, initialValue);
+  return sumWithInitial
+};
+console.log(sumWithReduce([10, 3, 5, 2])); // 20
+console.log(sumWithReduce([])); // 0
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {
